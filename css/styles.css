@@ -227,9 +227,32 @@ p {
   background-color: var(--cloud);
 }
 
-.team__member {
-  background-color: var(--white);
+.team__title {
+  padding-top: 120px;
 }
+
+.team__list {
+  display: flex;
+  gap: 24px;
+}
+
+.team__member {
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__member-title {
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
+.team__member-text {
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+/* footer */
 
 .footer {
   background-color: var(--gray);
