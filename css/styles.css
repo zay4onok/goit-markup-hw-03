@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -33,18 +33,55 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* header */
 
+.header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -55,6 +92,16 @@ a {
 
 .logo__span {
   color: var(--iris);
+}
+
+.menu {
+  display: flex;
+  gap: 76px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
 }
 
 .menu__link {
@@ -74,6 +121,11 @@ a {
   font-style: normal;
 }
 
+.address__list {
+  display: flex;
+  gap: 40px;
+}
+
 .address__link:hover,
 .address__link:focus {
   color: var(--ocean);
@@ -83,6 +135,7 @@ a {
 
 .hero {
   background-color: var(--gray);
+  padding: 188px 0;
 }
 
 .hero__title {
@@ -92,11 +145,12 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+  margin-bottom: 48px;
 }
 
 .hero__btn {
-  font-family: "Roboto", sans-serif;
-  font-family: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--iris);
@@ -104,6 +158,11 @@ a {
   color: var(--white);
   cursor: pointer;
   border: none;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero__btn:hover,
@@ -113,16 +172,17 @@ a {
 
 /* features */
 
-.hidden {
+.visuality-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .h3 {
@@ -172,7 +232,7 @@ a {
 }
 
 .portfolio__filter-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
