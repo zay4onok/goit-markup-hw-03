@@ -191,9 +191,24 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.features__list {
+  display: flex;
+  gap: 24px;
+}
+
+.features__item {
+  min-width: 264px;
 }
 
 /* services */
+
+.services__list {
+  display: flex;
+  gap: 24px;
+}
 
 .h2 {
   font-weight: 700;
@@ -203,6 +218,7 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: var(--gray);
+  margin-bottom: 72px;
 }
 
 /* team */
