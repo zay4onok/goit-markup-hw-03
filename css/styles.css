@@ -205,6 +205,10 @@ p {
 
 /* services */
 
+.services.section {
+  padding-top: 0px;
+}
+
 .services__list {
   display: flex;
   gap: 24px;
@@ -225,10 +229,6 @@ p {
 
 .team {
   background-color: var(--cloud);
-}
-
-.team__title {
-  padding-top: 120px;
 }
 
 .team__list {
@@ -256,17 +256,22 @@ p {
 
 .footer {
   background-color: var(--gray);
+  padding: 100px 0;
 }
 
 .footer .logo {
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer__text {
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 /* filter */
+
 .portfolio__filter-item {
 }
 
