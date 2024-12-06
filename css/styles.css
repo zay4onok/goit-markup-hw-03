@@ -252,6 +252,55 @@ p {
   padding: 0 16px;
 }
 
+/* filter */
+
+.portfolio__filter {
+  padding-top: 96px;
+  margin-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__filter-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.portfolio__filter-btn:hover,
+.portfolio__filter-btn:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+  box-shadow: 
+  0px 2px 2px 0px rgba(0, 0, 0, 0.1),
+  0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__cards {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.portfolio__card-box {
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  padding: 32px 16px;
+}
+
 /* footer */
 
 .footer {
@@ -268,27 +317,4 @@ p {
 .footer__text {
   color: #f4f4fd;
   max-width: 264px;
-}
-
-/* filter */
-
-.portfolio__filter-item {
-}
-
-.portfolio__filter-btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--iris);
-  background-color: var(--cloud);
-  border: none;
-  cursor: pointer;
-}
-
-.portfolio__filter-btn:hover,
-.portfolio__filter-btn:focus {
-  color: var(--white);
-  background-color: var(--ocean);
 }
