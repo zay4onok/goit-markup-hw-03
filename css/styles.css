@@ -200,7 +200,7 @@ p {
 }
 
 .features__item {
-  min-width: 264px;
+  width: calc((100% - 48px) / 3);
 }
 
 /* services */
@@ -212,6 +212,14 @@ p {
 .services__list {
   display: flex;
   gap: 24px;
+}
+
+.services__item {
+  width: calc((100% - 48px) / 3);
+}
+
+.services__img {
+  width: 100%;
 }
 
 .h2 {
@@ -237,9 +245,14 @@ p {
 }
 
 .team__member {
+  width: calc((100% - 72px) / 4);
   text-align: center;
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__member-img {
+  width: 100%;
 }
 
 .team__member-title {
@@ -282,9 +295,7 @@ p {
   color: var(--white);
   background-color: var(--ocean);
   border: 1px solid transparent;
-  box-shadow: 
-  0px 2px 2px 0px rgba(0, 0, 0, 0.1),
-  0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio__cards {
@@ -294,11 +305,19 @@ p {
   margin-bottom: 120px;
 }
 
+.portfolio__card {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio__card-img {
+  width: 100%;
+}
+
 .portfolio__card-box {
+  padding: 32px 16px 32px 16px;
+  border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
-  border-bottom: 1px solid var(--cornflower);
-  padding: 32px 16px;
 }
 
 /* footer */
